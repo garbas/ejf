@@ -270,6 +270,24 @@
                 .attr('name', field.name)
                 .attr('placeholder', field.help || '')
               ));
+        } else if (field.type === 'choice') {
+          $options = $('<div/>').addClass('col-sm-10');
+          (field.options|| []).forEach(function(item) {
+            $options.append(
+              $('<div/>')
+                .addClass('radio-inline')
+                .append(
+                  $('<label/>')
+                    .append(
+                      $('<input/>')
+                        .attr('type', 'radio')
+                        .attr('name', field.name)
+                        .attr('value', item.value))
+                    .append(
+                      $('<span/>')
+                        .text(item.label))));
+          });
+          $field.append($options);
         }
 
         $form.append($field);
