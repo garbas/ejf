@@ -124,7 +124,7 @@
 
   var RentCheckFields = [
     { name: 'registration-number',
-      label: 'Aktenzeichen',
+      label: 'Geschäftszeichen',
       help: 'z.B. A2044-010101',
       type: 'text'
       },
@@ -164,47 +164,57 @@
     { name: 'client-family-member1',
       label: 'Familienangehörige 1',
       type: 'text',
-      help: 'z.B. Isreb, Fatima',
+      help: 'z.B. Khalif, Fatima'
       },
     { name: 'client-family-member2',
       label: 'Familienangehörige 2',
-      type: 'text'
+      type: 'text',
+      help: 'z.B. Isreb, Ali'
       },
     { name: 'client-family-member3',
       label: 'Familienangehörige 3',
-      type: 'text'
+      type: 'text',
+      help: 'z.B. Isreb, Mahmud'
       },
     { name: 'client-family-member4',
       label: 'Familienangehörige 4',
-      type: 'text'
+      type: 'text',
+      help: 'z.B. Isreb, Leila'
       },
     { name: 'client-family-member 5',
       label: 'Familienangehörige',
-      type: 'text'
+      type: 'text',
+      help: 'z.B. Isreb, Kadija'
       },
     { name: 'client-family-member6',
       label: 'Familienangehörige 6',
-      type: 'text'
+      type: 'text',
+      help: 'z.B. Isreb, Fatima'
       },
     { name: 'appartment-street',
-      label: 'Addresse Wohnungs housenummer',
-      type: 'text'
+      label: 'Neue Anschrift',
+      type: 'text',
+      help: 'z.B. Birkenstr. 30'
       },
     { name: 'appartment-zip',
-      label: 'Postzahl',
-      type: 'text'
+      label: 'PLY',
+      type: 'text',
+      help: 'z.B. 10551'
       },
     { name: 'appartment-building-size',
-      label: 'Gebäudefläche',
-      type: 'text'
+      label: 'Gebäudefläche [m2]',
+      type: 'text',
+      help: 'z.B. 1000'
       },
     { name: 'appartment-size',
-      label: 'Gebäudefläche',
-      type: 'text'
+      label: 'Wohnungsgröße [m2]',
+      type: 'text',
+      help: 'z.B. 53'
       },
     { name: 'appartment-numbers-of-rooms',
-      label: 'Zimmer',
-      type: 'text'
+      label: 'Zimmeranzahl',
+      type: 'text',
+      help: 'z.B. 2'
       },
     { name: 'appartment-heating-source',
       label: 'Heizungsart',
@@ -224,12 +234,14 @@
         ]
       },
     { name: 'appartment-heating-costs',
-      label: 'Tatsächliche heizkosten',
-      type: 'text'
+      label: 'Tatsächliche Heizkosten [EUR]',
+      type: 'text',
+      help: 'z.B. 84,50'
       },
     { name: 'appartment-price-cold-brutto',
-      label: 'Bruttokaltmiete',
-      type: 'text'
+      label: 'Bruttokaltmiete [EUR]',
+      type: 'text',
+      help: 'z.B. 345,80'
       },
   ]
   // Content
