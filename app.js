@@ -124,59 +124,66 @@
 
   var RentCheckFields = [
     { name: 'registration-number',
-      label: 'Registration number',
+      label: 'Aktenzeichen',
+      help: 'z.B. A2044-010101',
       type: 'text'
       },
     { name: 'client-gender',
-      label: 'Gender',
+      label: 'Geschlecht',
       type: 'choice',
       options: [
-          { value: 'male', label: 'Male' },
-          { value: 'female', label: 'Female' }
+          { value: 'male', label: 'Mann' },
+          { value: 'female', label: 'Frau' }
         ]
       },
     { name: 'client-firstname',
-      label: 'Name',
-      type: 'text'
+      label: 'Vorname',
+      type: 'text',
+      help: 'z.B. Belal'
       },
     { name: 'client-lastname',
-      label: 'Lastname',
-      type: 'text'
+      label: 'Nachname',
+      type: 'text',
+      help: 'z.B. Isreb'
       },
     { name: 'client-birthdate',
-      label: 'Birth date',
-      type: 'text'
+      label: 'Geburtsdatum',
+      type: 'text',
+      help: 'z.B. 01.01.1999'
       },
     { name: 'client-address-street',
-      label: 'Addresse housenummer',
-      type: 'text'
+      label: 'Derzeitige Anschrift',
+      type: 'text',
+      help: 'z.B. Turmstr. 21'
       },
     { name: 'client-address-zip',
-      label: 'Postzahl',
-      type: 'text'
+      label: 'PLZ',
+      type: 'text',
+      help: 'z.B. 10559'
       },
     { name: 'client-family-member1',
-      label: 'Family member 1',
-      type: 'text'
+      label: 'Familienangehörige 1',
+      type: 'text',
+      help: 'z.B. Isreb, Fatima',
       },
     { name: 'client-family-member2',
-      label: 'Family member 2',
+      label: 'Familienangehörige 2',
       type: 'text'
       },
     { name: 'client-family-member3',
-      label: 'Family member 3',
+      label: 'Familienangehörige 3',
       type: 'text'
       },
     { name: 'client-family-member4',
-      label: 'Family member 4',
+      label: 'Familienangehörige 4',
       type: 'text'
       },
-    { name: 'client-family-member5',
-      label: 'Family member 5',
+    { name: 'client-family-member 5',
+      label: 'Familienangehörige',
       type: 'text'
       },
     { name: 'client-family-member6',
-      label: 'Family member 6',
+      label: 'Familienangehörige 6',
       type: 'text'
       },
     { name: 'appartment-street',
@@ -242,7 +249,7 @@
     },
     render_rent_check: function(status) {
       this.$el.html('');
-      var $title = $('<h1>Rent Check</h1>');
+      var $title = $('<h1>Mietprüfung</h1>');
       var $form = $('<form/>').addClass('form-horizontal');
 
       RentCheckFields.forEach(function(field) {
